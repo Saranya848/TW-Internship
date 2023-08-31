@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Home</title>
+
+    <!-- ============= Favicon ================ -->
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+
+    <!-- ================== Remixicon ================ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- =========================== CSS ==================== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calculate.css">
+
+    <!-- ======================== Google font ================= -->
+    <script src="https://kit.fontawesome.com/13a5486e25.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+
+    <header id="header">
+        <div class="nav-details">
+            <nav>
+                <a href="#"><img src="./images/logo.jpg" class="logo" alt="logo"><br><span
+                        class="logo-title">S.A.R.Fitness</span></a>
+                <ul id="slidemenu">
+                    <li class="nav-items">Home</li>
+                    <li class="nav-items">About Us</li>
+                    <li class="nav-items">Sessions</li>
+                    <li class="nav-items">Blog</li>
+                    <li class="nav-items">Pricing</li>
+                    <li class="nav-items">BMI</li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+        <div class="blocker">
+            <div class="overlay">
+            </div>
+        </div>
+
+        <!--==================== HOME ====================-->
+        <div id="home">
+            <div class="home">
+                <p>Way to build healthy lifestyle</p>
+                <h2>Upgrade your body with S.A.R. Gym.</h2>
+                <div class="btn">
+                    <a class="btn simple">Get Started</a>
+                    <a class="btn border">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--==-================== ABOUT US ====================-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="ab-block">
+                        <img src="./images/fit1.png" alt="fitness">
+                    </div>
+                    <div class="ab-block1">
+                        <h3 class="subtitle">About Us</h3>
+                        <h4>Welcome To Our Fitness Gym</h4>
+                        <p class="about-details">In actuality, it's either Aeneas or himself right now. With the
+                            exception of the protein trucks, I was not a part of the realm of living. Arrows will be
+                            used to take care of the porta sapien non accumsan dignissim children; there won't be any
+                            amet dolor feugiat.</p>
+                        <p class="about-details">It is entirely feasible to instill the tincidunt with a fear of life.
+                            The trucks are in front of him and there are no pickups in front of the trailer.</p>
+                        <a class="border" href="#soical-media">Explore More</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--==================== Session/PROGRAM ====================-->
+        <div id="program">
+            <div class="container">
+                <h3 class="subtitle">Sessions/Classes</h3>
+                <div class="services-list">
+                    <div>
+                        <div class="class-card">
+
+                            <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                                <img src="./images/gym1.jpg" width="416" height="240" loading="lazy"
+                                    alt="Weight Lifting" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Weight Lifting</h2>
+                                <p class="card-text">
+                                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                                </p>
+                                <div class="card-progress">
+
+                                    <div class="progress-wrapper">
+                                        <p class="progress-label">Class Full</p>
+
+                                        <span class="progress-value">85%</span>
+                                    </div>
+
+                                    <div class="progress-bg">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="class-card">
+
+                            <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                                <img src="./images/imag2.jpg" width="416" height="240" loading="lazy"
+                                    alt="Weight Lifting" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Yoga Training</h2>
+                                <p class="card-text">
+                                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                                </p>
+                                <div class="card-progress">
+
+                                    <div class="progress-wrapper">
+                                        <p class="progress-label">Class Full</p>
+
+                                        <span class="progress-value">74%</span>
+                                    </div>
+
+                                    <div class="progress-bg">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="class-card">
+
+                            <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                                <img src="./images/imag3.jpg" width="416" height="240" loading="lazy"
+                                    alt="Weight Lifting" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h2>Exercise and fitness Training</h2>
+                                <p class="card-text">
+                                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                                </p>
+                                <div class="card-progress">
+
+                                    <div class="progress-wrapper">
+                                        <p class="progress-label">Class Full</p>
+
+                                        <span class="progress-value">93%</span>
+                                    </div>
+
+                                    <div class="progress-bg">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== CHOOSE US ====================-->
+        <div id="choose">
+            <div class="container">
+                <h3 class="subtitle">Blogs for Health and Fitnesss</h3>
+                <div class="choose-block">
+
+                    <div class="blog">
+                        <div class="layer1">
+                            <h3>Strength and Fitness</h3>
+                            <p>To help its readers get in better shape, Muscle and Fitness offers them helpful training
+                                and
+                                dietary suggestions.</p>
+
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="layer2">
+                            <h3>Runtastic</h3>
+                            <p>Aspects of health, exercise, nutrition, and weight loss are all covered by the Runtastic
+                                blog
+                                through its in-depth articles and mobile apps.</p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="layer3">
+                            <h3>Get Well You</h3>
+                            <p>Get Healthy provides its readers with both advice on how to lead a happy and healthy life
+                                and an
+                                E-Course to assist them in improving their health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!--==================== PRICING ====================-->
+        <div id="pricing">
+            <div class="container">
+                <h3 class="subtitle">Subscribe Plans</h3>
+                <div class="plans">
+                    <div class="plan-card">
+                        <div class="cards">
+                            <h4 class="card-header">Free</h4>
+
+
+
+                            <div class="card-body">
+                                <h1 class="card-title">$0<small>/mo</small></h1>
+                                <ul>
+                                    <li>10 users included</li>
+                                    <li>2 GB of storage</li>
+                                    <li>Email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="btn1 simple1">Sign up for free</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="plan-card">
+                        <div class="cards">
+                            <h4 class="card-header">Pro</h4>
+
+                            <div class="card-body">
+                                <h1 class="card-title">$15<small>/mo</small></h1>
+                                <ul>
+                                    <li>20 users included</li>
+                                    <li>10 GB of storage</li>
+                                    <li>Priority email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="btn1 border1">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-card">
+                        <div class="cards">
+                            <h4 class="card-header">Enterprise</h4>
+                            <div class="card-body">
+                                <h1 class="card-title">$29<small>/mo</small></h1>
+                                <ul>
+                                    <li>30 users included</li>
+                                    <li>15 GB of storage</li>
+                                    <li>Phone and email support</li>
+                                    <li>Help center access</li>
+                                </ul>
+                                <button type="button" class="btn1 border1">Contact us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="table-responsive">
+                    <table class="text-center">
+                        <thead>
+                            <tr>
+                                <th colspan="4">
+                                    <h2 class="compare-plan">Compare plans</h2>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th style="width: 40%;" class="text-data"></th>
+                                <th style="width: 20%;" class="text-data">Free</th>
+                                <th style="width: 20%;" class="text-data">Pro</th>
+                                <th style="width: 20%;" class="text-data">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Public</th>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Private</th>
+                                <td class="text-data"></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Permissions</th>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Sharing</th>
+                                <td class="text-data"></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Unlimited members</th>
+                                <td class="text-data"></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Extra security</th>
+                                <td class="text-data"></td>
+                                <td class="text-data"></td>
+                                <td class="text-data"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== CALCULATE ====================-->
+        <div id="calculate">
+            <div class="container">
+                <h3 class="subtitle">Calculate</h3>
+                <div class="box">
+                    <h1>BMI Calculator</h1>
+                    <div class="content">
+                        <div class="input">
+                            <label for="height">Height(cm)</label>
+                            <input type="number" id="height">
+                        </div>
+                        <div class="input">
+                            <label for="weight">Weight(kg)</label>
+                            <input type="number" id="weight">
+                        </div>
+                        <button id="calculate">Calculate BMI</button>
+                    </div>
+                    <div class="result">
+                        <p>Your BMI is</p>
+                        <div id="result">00.00</div>
+                        <p class="comment"></p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" target="_blank" class="link">Watch on youtube <i class="fab fa-youtube"></i></a>
+
+
+
+
+        </div>
+        <!-- <div class="bottom-area">
+            <div class="container">
+              <button class="toggle-btn">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </button>
+            </div>
+          </div> -->
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer id="footer">
+        <div class="foot-details">
+
+            <div id="soical-media" class="soical-media">
+                <h2>Social media</h2>
+                <div class="s-media">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter" style="color: #6f99e2;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #db755c;"></i>
+                </div>
+            </div>
+            <div class="soical-media">
+                <h2>Get Notified About Our Home Opening</h2>
+                <form action="" method="GET" id="notify-form">
+                    <input class="email-input" type="email" id="notify-email" name="notify-email"
+                        placeholder="Enter your email address *">
+                    <button class="notify">Notify me</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var slidemenu = document.getElementById("slidemenu");
+
+        function openmenu() {
+            slidemenu.style.right = "0";
+        }
+        function closemenu() {
+            slidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/main1.js"></script>
+</body>
+
+</html>
