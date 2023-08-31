@@ -7,8 +7,8 @@ Aim:  The goal of the landing page is to grab visitors' attention and give them 
 	    Desiged project of Landing Page of Fitness
 	    Technologies used HTML,CSS, JAVASCRIPT
  
-Task  2:   Portifolio Website
+Task  2:   Portfolio Website
 Aim:   Building a customized and professional website that showcases a person's or a team's skills, efforts, and successes is the aim of the portfolio project in web development. The portfolio, which serves as a digital resume, allows potential employers, clients, or partners to browse a selection of projects, artworks, or accomplishments.
-	    Desiged project of Portifolio of  Personal Portifolio
+	    Desiged project of Portfolio of  Personal Portfolio Website
 	    Technologies used HTML,CSS, JAVASCRIPT
 
