@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    /* background: #080808; */
+    background: linear-gradient(to right, RGB(0, 0, 0), RGB(0,9,26), RGB(26,0,17), RGB(17,0,51), RGB(8,0,26), RGB(26,0,8));
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Draw1.webp);
+    background-size: cover;
+    background-position: center;
+}
+.nav-details{
+    width: 100%;
+    position: fixed;
+    background-color: #00041A;
+}
+.container{
+    padding: 12px 14%;
+    
+}
+section{
+    height: 50%;
+    margin-top: 2%;
+}
+nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100px;
+    margin: 0.5rem;
+    margin-left: 10%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #da2ea0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    background: #30eb0b;
+}
+.header-text{
+    margin-top: -30%;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-bottom: 25%;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 10px;
+}
+.header-text h1 span{
+    color: #da2ea0;
+}
+hr{
+    width: 90%;
+    text-align:center;
+    margin-left: 50px;
+}
+/* ----------------- About --------------- */
+#about{
+    
+    padding: 80px 0;
+    color: #cae7ee;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+
+}
+.about-col-1{
+    flex-basis: 25%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 70%;
+    padding: 10px;
+}
+.subtitle{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+h4{
+    margin-top: 10px;
+}
+.about-details{
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 8px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 20px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #da2ea0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.tab-links:hover::after{
+    width: 100%;
+    background: #30eb0b;
+}
+.tab-links.active-link{
+    width: 50px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+.tab-contents ul li span{
+    color: #da2ea0;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+    padding: 10px;
+    border: 1px solid #6d034a;
+    border-radius: 30px;
+}
+.tab-contents.active-tab{
+display: block;
+}
+

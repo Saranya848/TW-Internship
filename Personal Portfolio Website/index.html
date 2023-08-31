@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saranya_Siripurapu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+    <script src="https://kit.fontawesome.com/13a5486e25.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="nav-details">
+            <nav>
+                <img src="./images/logo2.png" class="logo" alt="logo">
+                <ul id="slidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#platforms">PlatForms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <!-- <i class="fa-regular fa-circle-xmark"></i> -->
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hello, I'm <span>Saranya</span><br>Siripurapu</h1>
+
+
+            </div>
+        </section>
+
+
+
+        <hr>
+
+
+        <!-- ------------- About ------------ -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/SelfPhoto.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h3 class="subtitle">About me</h3>
+                        <p class="about-details">As a seasoned HTML programmer, I have a proven track record of excelling in the development of EPUB and XML projects. With my experience, I have honed my skills in web development to create digital content that not only meets but exceeds expectations in terms of visual appeal and functionality. My expertise in HTML, combined with meticulous attention to detail, has consistently ensured the seamless execution of projects in EPUB and XML formats.</p>
+                        <p class="about-details">As an Apprentice Software Engineer, I successfully developed mini projects while also taking on the role of a mentor to guide and support junior team members. My commitment to hands-on learning and collaborative mentorship has allowed me to contribute effectively to projects while fostering growth within the team.</p>
+                        <p class="about-details">I'm a driven, adaptable person that is constantly willing to take on
+                            new tasks. My objective is to use my technical knowledge and ability to advance significant
+                            initiatives and support the achievements of forward-thinking businesses.Already, I am
+                            succeeding and contributing meaningfully.</p>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>JavaScript, Python</li>
+                            <li><span>Frontend Technologies</span><br>HTML, CSS, BOOTSTRAP, REACTJS</li>
+                            <li><span>DataBases</span><br>MySql, NodeJs</li>
+                            <li><span>Tools</span><br>VS CODE, Github, Postman Api, Adobe Photoshop</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents   nts" id="experience">
+                        <ul>
+                            <li><span>2023-August/Present</span><br>Web Development intern at TopperWorld</li>
+                            <li><span>2022-Jan/2022-Dec</span><br>Software Engineer at Bridgelabz Solutions Private
+                                Limited</li>
+                            <li><span>2019-July/2021-Nov</span><br>Html Programmer at Symbiosis Technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>B.tech at K L University(KLEF)</li>
+                            <li><span>2015</span><br>Intermediate at SriChaitanya Junior Institution</li>
+                            <li><span>2013</span><br>CBSE at S.M.T. GodavariDevi Saraf High School</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <!-- ---------------------services---------------------- -->
+        <section id="services">
+            <div class="container">
+                <h3 class="subtitle">My Services</h3>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Web Development Intern</h3>
+                        <p>Developed projectson LandingPage,Portifolio, full frontand Backendwith connectivity</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-react"></i>
+                        <h3>Software Engineer</h3>
+                        <p>Developed miniprojects and mentored junior candidates.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-leanpub"></i>
+                        <h3>HTML PROGRAMMMER</h3>
+                        <p>Developed Projcts like epublication of epub and xml and mentored junior candidates.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+
+        <!-- -------------------------- Portfolio -------------------- -->
+        <section id="portfolio">
+            <div class="container">
+                <h3 class="subtitle">My Work</h3>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/landingpage.jpg" alt="">
+                        <div class="layer">
+                            <h3>Landing Page</h3>
+                            <p>FitnessPage: The Page is to make person happy and healthy</p>
+                            <a href="#"><i class="fa-sharp fa-regular fa-share-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/bookstore.jpg" alt="">
+                        <div class="layer">
+                            <h3>Ecommerce App</h3>
+                            <p>BookStore App: The App is to buy books in user friendly.</p>
+                            <a href="#"><i class="fa-sharp fa-regular fa-share-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/epub.jpg" alt="">
+                        <div class="layer">
+                            <h3>Epub Projects</h3>
+                            <p>The International Digital Publishing Forum has established the.epub file extension, a standard for electronic publication, which is widely used in the e-book format.</p>
+                            <a href="#"><i class="fa-sharp fa-regular fa-share-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </section>
+        <hr>
+        <!-- ---------------- Coding Profiles ----------------- -->
+        <section id="platforms">
+            <div class="container">
+                <h3 class="subtitle">My Platforms</h3>
+                <div class="services-list1">
+                    <div>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <h3>GitHub</h3>
+                        <p>Developing code, building web pages and updating content.</p>
+
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-hackerrank"></i></a>
+                        <h3>Hackerrank</h3>
+                        <p>HackerRank is a technology hiring platform that is the standard for assessing developer
+                            skills.</p>
+
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-quora"></i></a>
+                        <h3>Quora</h3>
+                        <p>The goal of the intriguing website Quora is to provide you with answers as well as provide
+                            you the opportunity to answer questions for other people about topics you are educated
+                            about. It has elements of a search engine and a social network.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <!-- ------------------ Contact Me ----------------- -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> SaranyaSripurapu@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 9505167155</p>
+                        <div class="social-media">
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <a href="./images/Saranya Siripurapu.pdf" download class="btn btn2">Donwload CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <input type="number" name="Phone Number" placeholder="Your Phone Number" required>
+                            <textarea name="Message" id="" cols="30" rows="10"
+                                placeholder="Enter Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright @ Saranya.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var slidemenu = document.getElementById("slidemenu");
+
+        function openmenu() {
+            slidemenu.style.right = "0";
+        }
+        function closemenu() {
+            slidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwEAjWUPbXrAfZCAGwd6RZBam6KsysQKFSj5JBkdI4xHbXLtlkGHeyBh1xQGNIk11Z6/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Your Message sent Successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                }
+                )
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
