@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lugrasimo&family=Rock+Salt&display=swap');
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+    /**
+     * colors
+     */
+  
+    --rich-black-fogra-29_50: hsl(210, 26%, 11%, 0.5);
+    --rich-black-fogra-29-1: hsl(210, 26%, 11%);
+    --rich-black-fogra-29-2: hsl(210, 50%, 4%);
+    --silver-metallic: hsl(212, 9%, 67%);
+    --coquelicot_20: hsla(12, 98%, 52%, 0.2);
+    --coquelicot_10: hsla(12, 98%, 52%, 0.1);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --cadet-gray: hsl(214, 15%, 62%);
+    --light-gray: hsl(0, 0%, 80%);
+    --coquelicot: hsl(12, 98%, 52%);
+    --gainsboro: hsl(0, 0%, 88%);
+    --white_20: hsl(0, 0%, 100%, 0.2);
+    --white_10: hsl(0, 0%, 100%, 0.1);
+    --black_10: hsl(0, 0%, 0%, 0.1);
+    --white: hsl(0, 0%, 100%);
+
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(79, 72%, 55%);
+    --first-color-light: hsl(79, 97%, 77%);
+    --first-color-alt: hsl(79, 67%, 52%);
+    --first-color-dark: hsl(79, 63%, 50%);
+    --first-color-gray: hsl(79, 6%, 64%);
+    --title-color: hsl(180, 4%, 98%);
+    --title-color-black: hsl(180, 4%, 12%);
+    --text-color: hsl(180, 4%, 72%);
+    --text-color-light: hsl(180, 4%, 65%);
+    --body-color: hsl(180, 12%, 8%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Red Hat Display', sans-serif;
+    --second-font: 'Kaushan Script', cursive;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.5rem;
+    --big-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+      --biggest-font-size: 6rem;
+      --bigger-font-size: 3.5rem;
+      --big-font-size: 2.75rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #222121;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/fbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* .nav-details{
+    position: fixed;
+    background: #777a77;
+} */
+.container{
+    padding: 12px 12%;
+}
+nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    font-family: Georgia, serif;
+}
+.logo{
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.logo-title{
+  font-family: 'Pacifico', cursive;
+  color: #30eb0b;
+}
+.nav-details a{
+  margin-left: 25px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.nav-details{
+    /* position: fixed; */
+    background-color: none;
+    width: 100%;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #da2ea0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    background: #30eb0b;
+}
+.nav-items{
+    list-style: none;
+    padding-right: 20px;
+  }
+  .nav-items{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+.nav-items:hover{
+    color: #da0e0e;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+
+/* =================== main ===================== */
+.blocker{
+    
+    z-index: 3;
+    
+  }
+  .overlay{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: #171819;
+    opacity: 0.45;
+  }
+  .nav-items{
+    list-style: none;
+    padding-right: 20px;
+  }
+  .nav-items{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  .nav-items:hover{
+    color: #ff5733;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+  .home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+  }
+  .home p {
+    color: aliceblue;
+    font-size: 1.2rem;
+  }
+  .home h2 {
+    color: aliceblue;
+    font-size: 2.9rem;
+  }
+  .home .btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10%;
+    font-weight: 500;
+    border-radius: 3px;
+    
+  }
+  .home .btn a.simple{
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem 1.6rem;
+    border-radius: 3px;
+    margin-right: 15%;
+  }
+  .home .btn a.simple:hover{
+    color: #ff5733;
+    cursor: pointer;
+  }
+  .home .btn a.border{
+    color: rgb(226, 76, 22);
+    border: 1px solid rgb(226, 76, 22);
+    font-weight: 500;
+    padding: 1rem 1.6rem;
+    border-radius: 3px;
+  }
+  .home .btn a.border:hover{
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+   /* ==========About========== */
+#about{
+    padding: 80px 0;
+    color: #cae7ee;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ab-block{
+    flex-basis: 35%;
+}
+.ab-block img{
+    width: 100%;
+    border-radius: 15px;
+}
+.ab-block1{
+    flex-basis: 60%;
+}
+.subtitle{
+  margin-top: 5rem;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.ab-block1 h4{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+.ab-block1 p{
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(145, 139, 139);
+    margin-bottom: 2rem;
+}
+  .ab-block1 a{
+    color: #fff;
+    background-color: #ff5733;
+    margin-top: 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+/* =================== Sessions =================== */
+.program{
+    width: 100%;
+    margin-top: 10rem;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .program h3{
+    color: #ff5733;
+    text-align: center;
+    margin: 30px;
+  }
+
+
+  .class { padding-block-start: calc(var(--section-padding) + 250px); }
+
+.class-card {
+  background-color: var(--white);
+  border-radius: var(--radius-10);
+  height: 100%;
+  overflow: hidden;
+}
+
+.class-card .card-banner img { transition: var(--transition-2); }
+
+.class-card:is(:hover, :focus-within) .card-banner img {
+  transform: scale(1.1);
+}
+
+.card-content h2{
+  color: #da2ea0;
+}
+.class-card .card-content { padding: 24px; }
+
+.class-card .card-title { transition: var(--transition-1); }
+
+.class-card .card-title:is(:hover, :focus) { color: var(--coquelicot); }
+
+.class-card .card-text {
+  color: var(--sonic-silver);
+  font-size: var(--fs-6);
+  margin-block: 16px 12px;
+}
+
+.class-card .progress-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-catamaran);
+  color: var(--rich-black-fogra-29-1);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-800);
+  margin-block-end: 8px;
+}
+
+.class-card .progress-bg {
+  background-color: var(--coquelicot_10);
+  border-radius: 10px;
+}
+
+.class-card .progress-bar {
+  background-color: var(--coquelicot);
+  height: 10px;
+  border-radius: inherit;
+}
+
+
+/* =========services===== */
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.services-list div{
+    background: #f7f2f2;
+    font-size: 15px;
+    border-right: 10px;
+    display: block;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.services-list div h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* .services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-5px);
+} */
+
+/* ================ Blog ================== */
+.choose-block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.blog{
+  border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  
+}
+.layer1{
+  padding: 15%;
+  background-image: url(./images/blog1.jpg);
+  background-size: cover;
+  transform: 0.5s;
+  color: #ec1f7f;
+}
+.layer2{
+  padding: 15%;
+  background-image: url(./images/blog2.jpg);
+  background-size: cover;
+  transform: 0.5s;
+  color: #f70b66;
+}
+.layer3{
+  padding: 15%;
+  background-image: url(./images/blog3.jpg);
+  background-size: cover;
+  transform: 0.5s;
+  color: #f70b9d;
+}
+.layer1:hover{
+  color: #ee8858;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.layer2:hover{
+  color: #ee8858;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.layer3:hover{
+  color: #ee8858;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============== Calculate =============== */
+#calculate{
+  width: 100%;
+  display: block;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+
+/* ============ footer ================ */
+.foot-details{
+  background-color: #838588;
+  width: 100%;
+  padding: 5%;
+  margin-top: 10%;
+  /* display: flex;
+  flex-direction: row; */
+  
+  justify-content: space-between;
+}
+.s-media{
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+.fa-brands{
+  margin: 10px;
+}
+.soical-media{
+  margin: 20px;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+}
+.soical-media h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+.notify{
+  width: 20%;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  background-color: #12d7fa;
+  border-radius: 40px;
+}
+.email-input{
+  width: 50%;
+  height: 2rem;
+}
+
+  /* ===========css for small devices============= */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* ============= header ============= */
+  #header {
+    background-image: url(images/fbg1.jpg);
+  }
+
+  /* .header-text{
+  margin-top: 100%;
+  font-size: 16px;
+} */
+  /* .header-text h1{
+  font-size: 30px;
+} */
+nav .fas {
+  display: block;
+  font-size: 25px;
+  margin-right: 60px;
+}
+
+  nav ul {
+
+    background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 15px;
+
+  }
+
+  nav ul .fas{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+
+/* ========= main ========= */
+.home .btn{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px;
+  margin-top: 60px;
+  font-weight: 500;
+  border-radius: 3px;
+  display: flex;
+}
+.home .btn a.simple{
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem 1.6rem;
+  border-radius: 3px;
+}
+.home h2{
+  font-size: 28px;
+  position: fixed;
+}
+.home .btn a.border{
+  color: rgb(226, 76, 22);
+  border: 1px solid rgb(226, 76, 22);
+  /* border-color: rgb(226, 76, 22); */
+  font-weight: 500;
+  padding: 1rem 1.2rem;
+  border-radius: 3px;
+}
+
+
+
+  /* ---------- About --------- */
+
+  .subtitle {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .ab-block,
+  .ab-block1 {
+
+    flex-basis: 100%;
+  }
+
+  .ab-block {
+    margin-bottom: 30px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+  }
+
+  /* ============Calculate ======= */
+  
+
+
+  /* ================ footer =========== */
+  .soical-media{
+    font-size: 5px;
+  }
+  .soical-media h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .notify{
+    width: 30%;
+  }
+  
+  
+}
